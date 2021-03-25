@@ -1,6 +1,17 @@
+
+import os
+import json
+import sys
+
+from flask import Flask, render_template, jsonify, request
+from flask_restful import Resource, Api, reqparse
+
+app = Flask(__name__)
+
 # Python3 Bubble sort
-  
-def bubbleSort(arr):
+@app.route('/', methods=['GET'])
+
+def bubbleSort():
     n = len(arr)
    
     # Traverse through all array elements
@@ -22,14 +33,12 @@ def bubbleSort(arr):
         # by inner loop, then break
         if swapped == False:
             break
+    return json.dumps(arr)
            
-# Driver code to test above
+# number sequence to test above
 arr = [66, 37, 23, 17, 27, 14, 95]
    
-bubbleSort(arr)
-   
-print ("Sorted array :")
-for i in range(len(arr)):
-    print ("%d" %arr[i],end=" ")
-  
-# This code is contributed by Shreyanshi Arun
+bubbleSort()
+
+if __name__ == '__main__':
+        app.run(host="0.0.0.0", port=5000)
