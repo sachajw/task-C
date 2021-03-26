@@ -2,4 +2,8 @@ flask
 flask-restful
 gunicorn
 requests
-
+flake8
+pytest
+pytest-cover
+pytest-flake8
+coverage
