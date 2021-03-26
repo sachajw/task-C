@@ -1,18 +1,22 @@
-FROM python:3.8
+FROM python:3.8 AS BASE
 LABEL maintainer="sachajw@gmail.com"
 
 COPY . /app
 
 WORKDIR /app
 
+RUN pip install --no-cache-dir -r requirements.txt
+
+FROM python:3.8
+
+RUN pytest -q --flake8
+RUN pytest
+
+COPY ./coverage.sh /coverage.sh
+RUN chmod +x /coverage.sh
+
 ENV MAX_SIZE=10000
 
-RUN pip install --no-cache-dir -r requirements.txt
-RUN pytest -q --flake8
-RUN pytest --cov=./ --cov-report=html
-
 EXPOSE 5000
-
 ENTRYPOINT ["python"]
-
 CMD ["app/bubble-sort.py"]

@@ -1,4 +1,5 @@
 [run]
+disable_warnings = no-data-collected
 branch = True
 source = app/
 
