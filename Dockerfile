@@ -1,8 +1,8 @@
-FROM python:3-slim AS build-env
-ADD . /app
+FROM python:3.8
+LABEL maintainer="sachajw@gmail.com"
+COPY . /app
 WORKDIR /app
-
-FROM gcr.io/distroless/python3
-COPY --from=build-env /app /app
-WORKDIR /app
-CMD ["bubble-sort.py", "/etc"]
+RUN pip install --no-cache-dir -r requirements.txt
+EXPOSE 5000
+ENTRYPOINT ["python"]
+CMD ["app/bubble-sort.py"]
