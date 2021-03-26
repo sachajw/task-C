@@ -1,7 +1,5 @@
-
 import os
 import json
-import sys
 
 from flask import Flask, render_template, jsonify, request
 from flask_restful import Resource, Api, reqparse
