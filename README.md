@@ -25,21 +25,6 @@ author: Sacha Wharton
 
 The Pylance name is a small ode to Monty Python's Lancelot who was the first knight to answer the bridgekeeper's questions in the Holy Grail.
 
-### SonarQube
-docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000:9000 sonarqube:latest
-docker run \
-    --rm \
-    -e SONAR_HOST_URL="http://${SONARQUBE_URL}" \
-    -e SONAR_LOGIN="myAuthenticationToken" \
-    -v "${YOUR_REPO}:/usr/src" \
-    sonarsource/sonar-scanner-cli
-
-sonar-scanner \
-  -Dsonar.projectKey=cJ7jXhroZPwfWiKFdfU95htMhxvSW4 \
-  -Dsonar.sources=. \
-  -Dsonar.host.url=http://localhost:9000 \
-  -Dsonar.login=0ce9925d379abb0e54055096b5e5d330f4d55e94
-
 ### Bubble Sort
 Lets describe the Python file bubble-sort.py.
 
