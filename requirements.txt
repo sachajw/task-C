@@ -3,8 +3,7 @@ flask-restful
 gunicorn
 requests
 #test suites
-flake8
-flake8-black
+coverage
 nox
 pytest
 pytest-sugar
