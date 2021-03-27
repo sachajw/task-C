@@ -1,4 +1,5 @@
 .htaccess
+.nox
 css.php
 rpc/
 sites/site*/admin/
