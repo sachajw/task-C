@@ -1,12 +1,18 @@
+# Third party modules
 import pytest
+
+# First party modules
+from app import create_app
 
 
 @pytest.fixture
 def client():
-    # Prepare before your test
-    flaskr.app.config["TESTING"] = True
-    with flaskr.app.test_client() as client:
-        # Give control to your test
+    app = create_app()
+    app.config["TESTING"] = True
+    with app.test_client() as client:
         yield client
-    # Cleanup after the test run.
-    # ... nothing here, for this simple example
+
+
+def test_square(client):
+    rv = client.get("/square?number=8")
+    assert b"64" == rv.data

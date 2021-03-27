@@ -23,9 +23,8 @@ I used VS Code for these tasks so all extensions and so on are referenced for VS
 After comparing [Tox](https://tox.readthedocs.io/en/latest/index.html) and [Nox](https://nox.thea.codes/en/stable/).
 I choose Nox because it uses the Python language to configure its tests. You can find the cmd line [here](https://nox.thea.codes/en/stable/usage.html)
 I created '''noxfile.py''' with two sessions, one for linting using [Flake8](https://flake8.pycqa.org/en/latest/) and [Black](https://pypi.org/project/black/), and one for testing using [Pytest](https://docs.pytest.org/en/stable/contents.html).
-I created a '''requirements-test.txt''' file for all the neccessary plugins to be installed for [Pytest](https://docs.pytest.org/en/stable/contents.html).
-I created a '''requirements.txt''' file for all the neccessary dependencies to be installed for the [Python](https://www.python.org/) application ```bubble-sort.py'''
-This allows me to seperate dependencies for the application and testing and speeds up the [Docker](https://www.docker.com/) container build.
+I created a '''requirements.txt''' file for all the neccessary dependencies to be installed for the [Python](https://www.python.org/) application ```bubble-sort.py''',
+and for all the neccessary plugins to be installed for [Pytest](https://docs.pytest.org/en/stable/contents.html).
 
 ## Running pytest can result in six different exit codes:
 

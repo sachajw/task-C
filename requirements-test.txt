@@ -1,7 +1,0 @@
-flake8
-flake8-black
-nox
-pytest
-pytest-sugar
-pytest-cover
-pytest-flake8
