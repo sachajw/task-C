@@ -1,15 +1,7 @@
-import sys
-import signal
 import json
 
 from flask import Flask, render_template, jsonify, request
 from flask_restful import Resource, Api, reqparse
-
-def sigterm_handler(*args):
-    [print(a) for a in args]
-    sys.exit()
-
-signal.signal(signal.SIGTERM, sigterm_handler)
 
 app = Flask(__name__)
 

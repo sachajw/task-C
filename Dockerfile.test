@@ -10,10 +10,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 FROM python:3.8
 
 RUN pytest -q --flake8
-RUN pytest
-
-COPY ./coverage.sh /coverage.sh
-RUN chmod +x /coverage.sh
+RUN pytest --cov=./ --cov-report=html
 
 ENV MAX_SIZE=10000
 
