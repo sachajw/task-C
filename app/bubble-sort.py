@@ -1,11 +1,10 @@
 import json
 
-from flask import (Flask,
-                 json)
+from flask import Flask, json
 
 app = Flask(__name__)
 
-# Python3 Bubble sort
+
 @app.route('/', methods=['GET'])
 
 def bubbleSort():
