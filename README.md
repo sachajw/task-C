@@ -32,19 +32,19 @@ and for all the neccessary plugins to be installed for [Pytest](https://docs.pyt
 All tests were collected and passed successfully
 
 **Exit code 1**
-Tests were collected and run but some of the tests failed
+* Tests were collected and run but some of the tests failed
 
 **Exit code 2**
-Test execution was interrupted by the user
+* Test execution was interrupted by the user
 
 **Exit code 3**
-Internal error happened while executing tests
+* Internal error happened while executing tests
 
 **Exit code 4**
-pytest command line usage error
+* pytest command line usage error
 
 **Exit code 5**
-No tests were collected
+* No tests were collected
 
 #### Bubble Sort
 Lets describe the Python file bubble-sort.py.
@@ -54,21 +54,21 @@ Lets describe the Python file bubble-sort.py.
 * Please refer to requirements.txt for all required dependencies to run this task.
 
 **List all running containers**
-docker ps
+* docker ps
 
 **list all containers**
-docker ps -a
+* docker ps -a
     
 **list all docker images**
-docker images
+* docker images
        
 **build the docker image**
-docker build -t <imageName:version> dockerFilePath
-docker build -t task-c .
+* docker build -t <imageName:version> dockerFilePath
+* docker build -t task-c .
        
 **run the docker container in daemon mode with ports exposed**
-docker run -it -d -p <outsidePort>:<dockerInsidePort> <imageName:version>
-docker run -itdp 80:5000 task-c
+* docker run -it -d -p <outsidePort>:<dockerInsidePort> <imageName:version>
+* docker run -itdp 80:5000 task-c
 
 **access the following url in your browser** http://localhost
 
