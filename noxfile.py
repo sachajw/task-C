@@ -5,7 +5,7 @@ import nox
 def test(session):
     """Run the test suite"""
     session.install("-r", "requirements.txt")
-    session.run("pytest","app/bubble-sort.py", "--collect-only")
+    session.run("pytest","test/conftest.py")
     session.run("coverage", "report")
 
 
