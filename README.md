@@ -22,7 +22,7 @@ I used VS Code for these tasks so all extensions and so on are referenced for VS
 ### Static Code Analyzer
 After comparing [Tox](https://tox.readthedocs.io/en/latest/index.html) and [Nox](https://nox.thea.codes/en/stable/).
 I choose Nox because it uses the Python language to configure its tests. You can find the cmd line [here](https://nox.thea.codes/en/stable/usage.html)
-I created '''noxfile.py''' with two sessions, one for linting using [Flake8](https://flake8.pycqa.org/en/latest/) and [Black](https://pypi.org/project/black/), and one for testing using [Pytest](https://docs.pytest.org/en/stable/contents.html).
+I created '''noxfile.py''' with two sessions, one for testing/code coverage using [Pytest](https://docs.pytest.org/en/stable/contents.html). one for linting using [Flake8](https://flake8.pycqa.org/en/latest/). 
 I created a '''requirements.txt''' file for all the neccessary dependencies to be installed for the [Python](https://www.python.org/) application ```bubble-sort.py''',
 and for all the neccessary plugins to be installed for [Pytest](https://docs.pytest.org/en/stable/contents.html).
 
@@ -49,9 +49,9 @@ All tests were collected and passed successfully
 #### Bubble Sort
 Lets describe the Python file bubble-sort.py.
 
-* I used [Flask-RESTPlus](https://flask-restplus.readthedocs.io/en/stable/) and [Swagger UI](https://swagger.io/) to generate the API
-* Swagger is API development for all the people, in other words Open API and Open Source.
-* Please refer to requirements.txt for all required dependencies to run this task.
+* I used the [Flask Framework](https://flask-restplus.readthedocs.io/en/stable/) to present the bubble sort algorithm as json in the browser.
+
+#### Docker Container
 
 **List all running containers**
 * docker ps
@@ -70,7 +70,9 @@ Lets describe the Python file bubble-sort.py.
 * docker run -it -d -p <outsidePort>:<dockerInsidePort> <imageName:version>
 * docker run -itdp 80:5000 task-c
 
-**access the following url in your browser** http://localhost
+**access the following url in your browser**
+* http://localhost
+
 
 **:heartpulse:LoveYourCodies**
 
