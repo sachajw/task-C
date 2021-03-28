@@ -15,10 +15,3 @@ def lint(session):
     session.install("-r", "requirements.txt")
     session.run("flake8", "app/bubble-sort.py")
 
-
-#@nox.session(python=["3.8"])
-#def coverage(session):
-#    """Run the coverage suite"""
-#    session.install("-r", "requirements.txt")
-#    session.run("coverage", "run", "-m", "pytest", "test/conftest.py")
-#    session.run("coverage", "report", "app/bubble-sort.py")
