@@ -25,7 +25,7 @@ def bubbleSort():
                 arr[j], arr[j+1] = arr[j+1], arr[j]
                 swapped = True
   
-        # IF no two elements were swapped
+        # If no two elements were swapped
         # by inner loop, then break
         if swapped == False:
             break
