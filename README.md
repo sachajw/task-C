@@ -16,17 +16,16 @@ author: Sacha Wharton
 # task-C
 ## Dockerise task A + B = C
 
-## Language
-* [Python3](https://www.python.org/)
+## Setup
+* Language [Python3](https://www.python.org/)
 * OS [Ubuntu 20.04](https://ubuntu.com/)
+* IDE [Microsoft VS Code](https://code.visualstudio.com/)
+* Containerisation [Docker](https://www.docker.com/)
 
 ## Requirements
 
 * Dockerise your app.
 * Add an environment variable to configure the maximum allowable array size that your bubble sort can be performed on.
-
-## IDE ---> VS Code 
-I used VS Code for these tasks.
 
 ## Tests & Static Code Analyzer
 After comparing [Tox](https://tox.readthedocs.io/en/latest/index.html) and [Nox](https://nox.thea.codes/en/stable/).
