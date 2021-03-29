@@ -49,7 +49,7 @@ It will also install the dependencies from ```requirements.txt```.
 ## Running pytest can result in six different exit codes:
 
 **Exit code 0**
-All tests were collected and passed successfully
+* All tests were collected and passed successfully
 
 **Exit code 1**
 * Tests were collected and run but some of the tests failed
