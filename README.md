@@ -1,4 +1,4 @@
-date: 2021-03-26
+date: 2021-03-29
 title: "Task-C"
 linkTitle: "Task-C"
 author: Sacha Wharton
@@ -16,15 +16,28 @@ author: Sacha Wharton
 # task-C
 ## Dockerise task A + B = C
 
-## IDE ---> VS Code 
-I used VS Code for these tasks so all extensions and so on are referenced for VS Code.
+## Language
+* [Python3](https://www.python.org/)
+* OS [Ubuntu 20.04](https://ubuntu.com/)
 
-## Static Code Analyzer
+## Requirements
+
+* Dockerise your app.
+* Add an environment variable to configure the maximum allowable array size that your bubble sort can be performed on.
+
+## IDE ---> VS Code 
+I used VS Code for these tasks.
+
+## Tests & Static Code Analyzer
 After comparing [Tox](https://tox.readthedocs.io/en/latest/index.html) and [Nox](https://nox.thea.codes/en/stable/).
 I choose Nox because it uses the Python language to configure its tests. You can find the cmd line [here](https://nox.thea.codes/en/stable/usage.html)
-I created '''noxfile.py''' with two sessions, one for testing/code coverage using [Pytest](https://docs.pytest.org/en/stable/contents.html) abd one for linting using [Flake8](https://flake8.pycqa.org/en/latest/). 
-I created a '''requirements.txt''' file for all the neccessary dependencies to be installed for the [Python](https://www.python.org/) application ```bubble-sort.py''',
+I created ```noxfile.py``` with two sessions, one for testing/code coverage using [Pytest](https://docs.pytest.org/en/stable/contents.html) abd one for linting using [Flake8](https://flake8.pycqa.org/en/latest/). 
+I created a ```requirements.txt``` file for all the neccessary dependencies to be installed for the [Python](https://www.python.org/) application ```bubble-sort.py```,
 and for all the neccessary plugins to be installed for [Pytest](https://docs.pytest.org/en/stable/contents.html).
+
+In order to run the tests, just type ```nox``` in the route and it will go through the ```test``` session and the ```linting``` session.
+Nox uses ```noxfile.py``` for all its session and confiugration. You will see to sections one for test and one for linting. 
+It will also install the dependencies from ```requirements.txt```.
 
 ## Running pytest can result in six different exit codes:
 
@@ -49,7 +62,11 @@ All tests were collected and passed successfully
 ## Bubble Sort
 Lets describe the Python file bubble-sort.py.
 
-* I used the [Flask Framework](https://flask-restplus.readthedocs.io/en/stable/) to present the bubble sort algorithm as json in the browser.
+* I use the ```bash``` terminal in ```Ubuntu 20.04```.
+* I used the [Flask Framework](https://flask.palletsprojects.com/en/1.1.x/) to present the bubble sort algorithm as json in the browser.
+* In order to run the development server change into the ```app``` directory and run ```python3 bubble-sort.py``` in your terminal.
+* Access the web page in your browser here http://localhost:5000
+* I use bash.
 
 ## Docker Container
 
