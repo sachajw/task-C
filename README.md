@@ -15,8 +15,6 @@ author: Sacha Wharton
 
 # task-C
 
-## Dockerise task A + B = C
-
 ## Setup
 * Language [Python3](https://www.python.org/)
 * OS [Ubuntu 20.04](https://ubuntu.com/)
