@@ -68,21 +68,21 @@ It will also install the dependencies from ```requirements.txt```.
 **List all running containers**
 * docker ps
 
-**list all containers**
+**List all containers**
 * docker ps -a
     
-**list all docker images**
+**List all docker images**
 * docker images
        
-**build the docker image**
+**Build the docker image**
 * docker build -t <imageName:version> dockerFilePath
 * docker build -t task-c .
        
-**run the docker container in daemon mode with ports exposed**
+**Run the docker container in daemon mode with ports exposed**
 * docker run -it -d -p <outsidePort>:<dockerInsidePort> <imageName:version>
 * docker run -itdp 80:5000 task-c
 
-**access the following url in your browser**
+**Access the following url in your browser**
 * http://localhost
 
 ## Phone a friend!
