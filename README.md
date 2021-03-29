@@ -38,12 +38,10 @@ Lets describe the Python file bubble-sort.py.
 ## Tests & Static Code Analyzer
 After comparing [Tox](https://tox.readthedocs.io/en/latest/index.html) and [Nox](https://nox.thea.codes/en/stable/).
 I choose Nox because it uses the Python language to configure its tests. You can find the cmd line [here](https://nox.thea.codes/en/stable/usage.html)
-I created ```noxfile.py``` with two sessions, one for testing/code coverage using [Pytest](https://docs.pytest.org/en/stable/contents.html) and one for linting using [Flake8](https://flake8.pycqa.org/en/latest/). 
-I created a ```requirements.txt``` file for all the neccessary dependencies to be installed for the [Python](https://www.python.org/) application ```bubble-sort.py```,
-and for all the neccessary plugins to be installed for [Pytest](https://docs.pytest.org/en/stable/contents.html).
+I created ```noxfile.py``` with two sessions, one for ```testing/code coverage``` using [Pytest](https://docs.pytest.org/en/stable/contents.html) and one for ```linting``` using [Flake8](https://flake8.pycqa.org/en/latest/). I created a ```requirements.txt``` file for all the neccessary dependencies to be installed for the [Python](https://www.python.org/) application ```bubble-sort.py```, and for all the neccessary plugins to be installed for [Pytest](https://docs.pytest.org/en/stable/contents.html).
 
 In order to run the tests, just type ```nox``` in the route and it will go through the ```test``` session and the ```linting``` session.
-Nox uses ```noxfile.py``` for all its session and confiugration. You will see to sections one for test and one for linting. 
+Nox uses ```noxfile.py``` for all its session and confiugration. You will see two sections one for test and one for linting. 
 It will also install the dependencies from ```requirements.txt```.
 
 ## Running pytest can result in six different exit codes:
