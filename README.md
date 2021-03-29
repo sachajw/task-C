@@ -16,13 +16,13 @@ author: Sacha Wharton
 # task-C
 ## Dockerise task A + B = C
 
-### IDE ---> VS Code 
+## IDE ---> VS Code 
 I used VS Code for these tasks so all extensions and so on are referenced for VS Code.
 
-### Static Code Analyzer
+## Static Code Analyzer
 After comparing [Tox](https://tox.readthedocs.io/en/latest/index.html) and [Nox](https://nox.thea.codes/en/stable/).
 I choose Nox because it uses the Python language to configure its tests. You can find the cmd line [here](https://nox.thea.codes/en/stable/usage.html)
-I created '''noxfile.py''' with two sessions, one for testing/code coverage using [Pytest](https://docs.pytest.org/en/stable/contents.html). one for linting using [Flake8](https://flake8.pycqa.org/en/latest/). 
+I created '''noxfile.py''' with two sessions, one for testing/code coverage using [Pytest](https://docs.pytest.org/en/stable/contents.html) abd one for linting using [Flake8](https://flake8.pycqa.org/en/latest/). 
 I created a '''requirements.txt''' file for all the neccessary dependencies to be installed for the [Python](https://www.python.org/) application ```bubble-sort.py''',
 and for all the neccessary plugins to be installed for [Pytest](https://docs.pytest.org/en/stable/contents.html).
 
@@ -46,12 +46,12 @@ All tests were collected and passed successfully
 **Exit code 5**
 * No tests were collected
 
-#### Bubble Sort
+## Bubble Sort
 Lets describe the Python file bubble-sort.py.
 
 * I used the [Flask Framework](https://flask-restplus.readthedocs.io/en/stable/) to present the bubble sort algorithm as json in the browser.
 
-#### Docker Container
+## Docker Container
 
 **List all running containers**
 * docker ps
