@@ -27,6 +27,14 @@ author: Sacha Wharton
 * Dockerise your app.
 * Add an environment variable to configure the maximum allowable array size that your bubble sort can be performed on.
 
+## Bubble Sort
+Lets describe the Python file bubble-sort.py.
+
+* I use the ```bash``` terminal in ```Ubuntu 20.04```.
+* I used the [Flask Framework](https://flask.palletsprojects.com/en/1.1.x/) to present the bubble sort algorithm as json in the browser.
+* In order to run the development server change into the ```app``` directory and run ```python3 bubble-sort.py``` in your terminal.
+* Access the web page in your browser here http://localhost:5000
+
 ## Tests & Static Code Analyzer
 After comparing [Tox](https://tox.readthedocs.io/en/latest/index.html) and [Nox](https://nox.thea.codes/en/stable/).
 I choose Nox because it uses the Python language to configure its tests. You can find the cmd line [here](https://nox.thea.codes/en/stable/usage.html)
@@ -58,15 +66,6 @@ All tests were collected and passed successfully
 **Exit code 5**
 * No tests were collected
 
-## Bubble Sort
-Lets describe the Python file bubble-sort.py.
-
-* I use the ```bash``` terminal in ```Ubuntu 20.04```.
-* I used the [Flask Framework](https://flask.palletsprojects.com/en/1.1.x/) to present the bubble sort algorithm as json in the browser.
-* In order to run the development server change into the ```app``` directory and run ```python3 bubble-sort.py``` in your terminal.
-* Access the web page in your browser here http://localhost:5000
-* I use bash.
-
 ## Docker Container
 
 **List all running containers**
@@ -89,6 +88,10 @@ Lets describe the Python file bubble-sort.py.
 **access the following url in your browser**
 * http://localhost
 
+## Phone a friend!
+* Write a script to automate your tests and static code analysis tools checks, that can run before starting up your development server on localhost.
+* If there is any failure, your server should not start up.
+* Add an environment variable to configure the maximum allowable array size that your bubble sort can be performed on.
 
 **:heartpulse:LoveYourCodies**
 
